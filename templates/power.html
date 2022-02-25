@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Nuclear Reactor</h1>
+</br></br>
+A nuclear power plant is a generating station which converts nuclear energy into electrical energy.</br> The schematic diagram of a typical nuclear power station is shown in the figure. It mainly consists of the following parts −
+
+Nuclear Reactor</br>
+Heat Exchanger</br>
+Steam Turbine</br>
+Alternator </br>(or Electric Generator)
+
+<center>
+  <img src="{{ url_for('static', filename='images/chernob/diagram.png')}}" width=500>
+  <br/><br/>
+</center>
+
+Nuclear Reactor</br></br>
+The nuclear reactor is an apparatus in which nuclear fuel such as Uranium (U235) or Thorium (Th232) is subjected to nuclear fission.</br> The nuclear reactor controls the chain reaction which starts once the fission of the fuel is done.</br> If the chain reaction is not controlled, the result will be an explosion due to fast increase in the energy released.</br>
+</br>
+The nuclear reactor is a cylindrical strong pressure vessel and has fuel rods, moderator and control rods.</br> The fuel rods are the rods of fission material such as Uranium and release huge amount of energy when bombarded with slow moving neutrons.</br>
+</br>
+The moderator is nothing but the graphite rods which enclose the fuel rods.</br> The moderator slows down the neutrons before they bombard the fuel rods.</br>
+</br>
+The control rods are the bars of cadmium and these are inserted into the reactor.</br> As the cadmium is a strong absorber of neutrons, </br>it regulates the supply of neutrons for the fission.</br>
+</br>
+The intensity of the chain reaction is controlled by pushing or withdrawing the control rods in the nuclear reactor.</br>
+</br>
+In practice, raising or lowering of control rods is accomplished automatically according to the load demand.</br>
+</br>
+The heat energy produced in the reactor is extracted out by the coolant (sodium metal) and the coolant carries the heat to the heat exchanger.</br>
+</br>
+Heat Exchanger</br>
+The heat exchanger is an apparatus which utilises the heat energy of the coolant for producing the steam.</br> After giving up the heat to the heat exchanger,</br> the coolant is again fed to the nuclear reactor.</br>
+</br>
+Steam Turbine</br></br>
+The steam produced in the heat exchanger is expanded in the steam turbine through the main valve which converts the heat energy of steam into mechanical energy.</br></br>
+</br>
+After doing a useful work in the turbine, the steam is exhausted to the condenser.</br> The condenser condenses the steam and this condensed steam is again fed to the heat exchanger with the help of a feed water pump.</br>
+</br>
+Alternator</br>
+The steam turbine drives the alternator which converts the mechanical energy of turbine into electrical energy.</br></br>
+
+{% endblock %}

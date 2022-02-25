@@ -81,4 +81,9 @@ def doxing():
 	return render_template("doxing.html", 
 		doctor_name=doctor_name,
 		plutonium=plutonium,
-		serial_corpse=serial_corpse,)     
+		serial_corpse=serial_corpse,)
+ 
+ 
+@app.route('/power')   
+def power():
+	return render_template("power.html")    

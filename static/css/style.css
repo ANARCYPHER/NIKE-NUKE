@@ -1,28 +1,28 @@
 h1 {
-	color: white;
+	color: black;
 	font-size:40px;
 }
 
 h2 {
-	color: white;
+	color: black;
 	font-size:35px;
 }
 
 h3 {
-	color: white;
+	color: black;
 	font-size:30px;
 }
 
 h4 {
-	color: white;
+	color: black;
 	font-size:25px;
 }
 
 body {
-	background: black;
+	background: white;
 }
 
 #demo{
 	font-size: 12px;
-	color: white;
+	color: black;
 }
