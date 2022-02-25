@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	<h1>DOXING!</h1>
+	<h2>D</h2>
+	<h3>D</h3>
+	<h4>D</h4>
+	<center>
+	<img src="{{ url_for('static', filename='images/WestPeak.gif')}}" width=300>
+	<br/><br/>
+	</center>
+
+
+	<p>VIRTUAL MORGUE</p>
+
+	<p>Name of Doctor {{ doctor_name }}</p>
+
+	<p>{{ morgue|title }}</p>
+
+	<h3>Morgue Serial:</h3>
+
+	{% for topping in plutonium %}
+		
+		{% if topping == 41 %}
+			{{ topping + 100 }}<br/>
+		{% else %}
+			{{ topping }}<br/>
+		{% endif %}
+
+		
+	{% endfor %}
+
+	<br/><br/>
+
+{% endblock %}

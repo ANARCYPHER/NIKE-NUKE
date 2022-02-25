@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	<!--<h4>INDEX!</h4>-->
+    </br>	
+	<center>
+	<img src="{{ url_for('static', filename='images/frontindex.gif')}}" width=500>
+	<br/><br/>
+	</center>
+
+	<p>NUCLEAR STATION</p>
+
+	<p>N.Serial is {{ first_name }}</p>
+
+	<p>{{ stuff|title }}</p>
+
+	<h3>Explosion by :</h3>
+
+	{% for topping in human_corpse %}
+		
+		{% if topping == 41 %}
+			{{ topping + 100 }}<br/>
+		{% else %}
+			{{ topping }}<br/>
+		{% endif %}
+
+		
+	{% endfor %}
+
+	<br/><br/>
+	
+
+
+{% endblock %}
